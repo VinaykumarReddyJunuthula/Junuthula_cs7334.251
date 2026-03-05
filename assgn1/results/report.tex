@@ -74,7 +74,8 @@ The following constructs were used:
 \item Reduction variable: \texttt{sum}
 \end{itemize}
 
-This approach prevents race conditions while enabling efficient parallel execution.
+This approach prevents race conditions while enabling efficient parallel execution.  
+The parallel implementation produced the same value of $\pi$ as the sequential program up to several decimal places, confirming the correctness of the parallelization.
 
 \section{Experimental Results}
 
@@ -106,6 +107,10 @@ The first experiment compared different combinations of OpenMP thread placement 
 The results show that \textbf{core-spread} achieved the best performance. 
 Spreading threads across cores reduces resource contention and improves overall CPU utilization.
 
+Based on the results in Figure 1, the configuration 
+\texttt{OMP\_PLACES=core} and \texttt{OMP\_PROC\_BIND=spread} 
+was selected as the best thread placement policy. All subsequent experiments used this configuration.
+
 \subsection{Strong Scaling}
 
 The number of threads was varied as:
@@ -118,8 +123,8 @@ The number of threads was varied as:
 \caption{Execution time vs number of threads.}
 \end{figure}
 
-Execution time decreases significantly as the number of threads increases up to around 16–32 threads. 
-Beyond this point, performance improvements diminish due to increased synchronization overhead and memory contention.
+Execution time decreases significantly as the number of threads increases up to around 16–32 threads, demonstrating good parallel scalability. 
+Beyond this point, performance improvements diminish due to thread management overhead and memory bandwidth limitations as more cores compete for shared resources.
 
 \subsection{Scheduling Policies}
 
@@ -131,7 +136,8 @@ The final experiment compared static and dynamic scheduling with chunk sizes of 
 \caption{Performance comparison of static and dynamic scheduling.}
 \end{figure}
 
-Dynamic scheduling produced slightly better performance because it allows threads to dynamically acquire new work, improving load balancing.
+Dynamic scheduling produced slightly better performance because it allows threads to dynamically acquire new work, improving load balancing across cores. 
+Static scheduling showed slightly higher execution times because work is assigned at the start of execution and cannot be redistributed if load imbalance occurs.
 
 \section{Conclusion}
 
@@ -141,8 +147,8 @@ The results show that:
 
 \begin{itemize}
 \item Thread placement significantly impacts performance on NUMA architectures.
-\item Core-spread placement provided the best performance.
-\item The application scales effectively up to moderate thread counts.
+\item Core-spread placement provided the best performance among the tested configurations.
+\item The application scales effectively as the number of threads increases up to moderate thread counts.
 \item Dynamic scheduling slightly improves load balancing compared to static scheduling.
 \end{itemize}
 

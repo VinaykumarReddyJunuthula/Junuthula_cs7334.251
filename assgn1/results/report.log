@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.30)  4 MAR 2026 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.30)  4 MAR 2026 21:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -296,24 +296,21 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 <plot_affinity.png, id=1, 462.528pt x 346.896pt>
 File: plot_affinity.png Graphic file (type png)
 <use plot_affinity.png>
-Package pdftex.def Info: plot_affinity.png  used on input line 102.
+Package pdftex.def Info: plot_affinity.png  used on input line 103.
 (pdftex.def)             Requested size: 232.19843pt x 174.15157pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 110--113
+[]\OT1/ptm/m/n/10 Based on the re-sults in Fig-ure 1, the con-fig-u-ra-tion
+ []
 
 <plot_scaling.png, id=3, 462.528pt x 346.896pt>
 File: plot_scaling.png Graphic file (type png)
 <use plot_scaling.png>
-Package pdftex.def Info: plot_scaling.png  used on input line 117.
-(pdftex.def)             Requested size: 232.19843pt x 174.15157pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<plot_schedule.png, id=4, 462.528pt x 346.896pt>
-File: plot_schedule.png Graphic file (type png)
-<use plot_schedule.png>
-Package pdftex.def Info: plot_schedule.png  used on input line 130.
+Package pdftex.def Info: plot_scaling.png  used on input line 122.
 (pdftex.def)             Requested size: 232.19843pt x 174.15157pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -323,6 +320,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
+<plot_schedule.png, id=20, 462.528pt x 346.896pt>
+File: plot_schedule.png Graphic file (type png)
+<use plot_schedule.png>
+Package pdftex.def Info: plot_schedule.png  used on input line 135.
+(pdftex.def)             Requested size: 232.19843pt x 174.15157pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -339,7 +345,7 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  3457 strings out of 478268
  61159 string characters out of 5839865
- 366158 words of memory out of 5000000
+ 365158 words of memory out of 5000000
  21640 multiletter control sequences out of 15000+600000
  501912 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -358,7 +364,7 @@ ucrr8a.pfb></scratch/projects/tacc/texlive/2022/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></scratch/projects/tacc/texlive/2022/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></scratch/projects/tacc/texlive/2022/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on report.pdf (2 pages, 403360 bytes).
+Output written on report.pdf (2 pages, 406600 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
