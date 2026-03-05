@@ -1,0 +1,5 @@
+TACC:  Starting up job 2933894 
+TACC:  Starting parallel tasks... 
+Rank 0 sent value 0 to Rank 1
+Rank 1 received value 0 from Rank 0
+TACC:  Shutdown complete. Exiting. 

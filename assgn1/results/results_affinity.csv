@@ -1,0 +1,5 @@
+places,bind,threads,time_s
+core,close,128,0.003383
+core,spread,128,0.002501
+socket,close,128,0.002685
+socket,spread,128,0.003301

@@ -1,0 +1,7 @@
+policy,chunk,time_s
+static,10,0.003038
+static,100,0.002903
+static,1000,0.003017
+dynamic,10,0.002553
+dynamic,100,0.002813
+dynamic,1000,0.002925
