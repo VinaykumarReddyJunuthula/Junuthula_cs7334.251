@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.30)  4 MAR 2026 21:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.30)  4 MAR 2026 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -201,8 +201,7 @@ dftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count278
 \l__pdf_internal_box=\box54
-)
-No file report.aux.
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -219,6 +218,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
+
 -- Lines per column: 56 (exact).
 
 (/scratch/projects/tacc/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.
@@ -337,9 +337,9 @@ Before submitting the final camera ready copy, remember to:
 [2 <./plot_affinity.png> <./plot_scaling.png> <./plot_schedule.png>]
 (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 3455 strings out of 478268
- 61137 string characters out of 5839865
- 366164 words of memory out of 5000000
+ 3457 strings out of 478268
+ 61159 string characters out of 5839865
+ 366158 words of memory out of 5000000
  21640 multiletter control sequences out of 15000+600000
  501912 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -358,7 +358,7 @@ ucrr8a.pfb></scratch/projects/tacc/texlive/2022/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></scratch/projects/tacc/texlive/2022/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb></scratch/projects/tacc/texlive/2022/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on report.pdf (2 pages, 403506 bytes).
+Output written on report.pdf (2 pages, 403360 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
