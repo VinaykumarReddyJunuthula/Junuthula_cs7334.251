@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.30)  26 MAR 2026 02:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.30)  26 MAR 2026 02:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,12 +23,34 @@ File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
 (/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
+(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+)
+(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 (/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
@@ -44,79 +66,68 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 ef
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen139
-\Gin@req@width=\dimen140
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+) (/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count196
+\float@exts=\toks18
+\float@box=\box50
+\@float@everytoks=\toks19
+\@floatcapt=\box51
 )
-(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
-(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-))
-\Gm@cnth=\count193
-\Gm@cntv=\count194
-\c@Gm@tempcnt=\count195
-\Gm@bindingoffset=\dimen141
-\Gm@wd@mp=\dimen142
-\Gm@odd@mp=\dimen143
-\Gm@even@mp=\dimen144
-\Gm@layoutwidth=\dimen145
-\Gm@layoutheight=\dimen146
-\Gm@layouthoffset=\dimen147
-\Gm@layoutvoffset=\dimen148
-\Gm@dimlist=\toks17
+(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box52
+\beforetitleunit=\skip49
+\aftertitleunit=\skip50
+\ttl@plus=\dimen149
+\ttl@minus=\dimen150
+\ttl@toksa=\toks20
+\titlewidth=\dimen151
+\titlewidthlast=\dimen152
+\titlewidthfirst=\dimen153
+) (/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen154
+\captionmargin=\dimen155
+\caption@leftmargin=\dimen156
+\caption@rightmargin=\dimen157
+\caption@width=\dimen158
+\caption@indent=\dimen159
+\caption@parindent=\dimen160
+\caption@hangindent=\dimen161
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count197
+\c@continuedfloat=\count198
+Package caption Info: float package is loaded.
 )
 (/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-p
 dftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count196
-\l__pdf_internal_box=\box50
+\l__color_backend_stack_int=\count199
+\l__pdf_internal_box=\box53
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
-(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.
-mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count197
-\scratchdimen=\dimen149
-\scratchbox=\box51
-\nofMPsegments=\count198
-\nofMParguments=\count199
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count266
-\MPscratchDim=\dimen150
-\MPnumerator=\count267
-\makeMPintoPDFobject=\count268
-\everyMPtoPDFconversion=\toks19
-)
-(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf
--base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-
-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -151,40 +162,60 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 12.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
+
+(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.
+mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count266
+\scratchdimen=\dimen162
+\scratchbox=\box54
+\nofMPsegments=\count267
+\nofMParguments=\count268
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count269
+\MPscratchDim=\dimen163
+\MPnumerator=\count270
+\makeMPintoPDFobject=\count271
+\everyMPtoPDFconversion=\toks22
+)
+(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf
+-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/scratch/projects/tacc/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-
+sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 <chart.png, id=1, 462.528pt x 346.896pt>
 File: chart.png Graphic file (type png)
 <use chart.png>
-Package pdftex.def Info: chart.png  used on input line 31.
-(pdftex.def)             Requested size: 399.29463pt x 299.48395pt.
-[1
+Package pdftex.def Info: chart.png  used on input line 39.
+(pdftex.def)             Requested size: 385.20255pt x 288.91342pt.
+ [1
 
 {/scratch/projects/tacc/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.m
-ap}] [2 <./chart.png>] (./report.aux) ) 
+ap}] [2 <./chart.png>] [3] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 1850 strings out of 478268
- 30338 string characters out of 5839865
- 329859 words of memory out of 5000000
- 20081 multiletter control sequences out of 15000+600000
- 473507 words of font info for 42 fonts, out of 8000000 for 9000
+ 3519 strings out of 478268
+ 61199 string characters out of 5839865
+ 359261 words of memory out of 5000000
+ 21744 multiletter control sequences out of 15000+600000
+ 471077 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,62p,479b,193s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</scratch/projects/tacc/texlive/2022/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></scratch/projects/tacc/texli
-ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></scratch/projects
-/tacc/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></scratc
-h/projects/tacc/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></scratch/projects/tacc/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr17.pfb>
-Output written on report.pdf (2 pages, 153997 bytes).
+ 55i,6n,63p,556b,404s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</scratch/projects/tacc/texlive/2022
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></scratch/projects/tacc/t
+exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></scratch/proj
+ects/tacc/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on report.pdf (3 pages, 134551 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 18 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
