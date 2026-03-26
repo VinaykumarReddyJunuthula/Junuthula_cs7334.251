@@ -1,0 +1,3 @@
+rm -f producer_consumer workpool
+mpicc -O2 -Wall -o producer_consumer producer_consumer.c
+mpicc -O2 -Wall -o workpool workpool.c

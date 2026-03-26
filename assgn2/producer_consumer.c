@@ -52,12 +52,12 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int num_producers = nproc / 2;
-    int num_consumers = nproc - 1 - num_producers;
+    int num_producers = (nproc - 1) / 2;
+    int num_consumers = (nproc - 1) - num_producers;
 
     int is_broker = (rank == 0);
     int is_producer = (rank >= 1 && rank <= num_producers);
-    int is_consumer = (rank >= num_producers + 1);
+    int is_consumer = (rank >= num_producers + 1 && rank < nproc);
 
     srand((unsigned int)(time(NULL) + rank * 1337));
 
