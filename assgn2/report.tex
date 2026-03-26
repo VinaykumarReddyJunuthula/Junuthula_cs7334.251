@@ -13,25 +13,31 @@
 
 \section*{System Architecture}
 
-The experiments were conducted on the Lonestar6 supercomputer. Each compute node consists of AMD EPYC 7763 processors with 64 cores per socket and two sockets per node, resulting in 128 cores per node. The architecture is x86\_64 with two NUMA nodes per system. Each core has L1 and L2 caches, and a large shared L3 cache is available across cores. The system provides high memory bandwidth and supports large-scale parallel execution using MPI.
+The experiments were conducted on the Lonestar6 supercomputer. Each compute node consists of AMD EPYC 7763 processors with 64 cores per socket and two sockets per node, resulting in 128 cores per node. The architecture is x86\_64 with two NUMA nodes per system. Each core has L1 and L2 caches, while a large shared L3 cache is available across cores. The system provides high memory bandwidth and supports large-scale parallel execution using MPI.
 
 \section*{Experiment Setup}
 
-Two execution models were implemented using MPI: a producer-consumer model and a work-pool model. In the producer-consumer model, rank 0 acts as a centralized broker managing a bounded buffer. Producers send work messages to the broker, while consumers request work from it.
+Two execution models were implemented using MPI: a producer-consumer model and a work-pool model.
+
+In the producer-consumer model, rank 0 acts as a centralized broker managing a bounded buffer. Producers send work messages to the broker, while consumers request work from it. This introduces centralized coordination.
 
 In the work-pool model, all processes act as both producers and consumers. Each process sends work messages to random processes and consumes incoming work directly, eliminating centralized coordination.
 
-Each program was executed with 4, 8, 12, and 16 processes. For each configuration, five runs were performed for 120 seconds. Throughput was computed as the number of messages consumed per second. The average throughput is shown in the figure below, with error bars representing minimum and maximum values.
+Each program was executed with 4, 8, 12, and 16 processes. For each configuration, five runs were performed for 120 seconds. Throughput was computed as the number of messages consumed per second. The average throughput across runs is shown below, with error bars representing the minimum and maximum values.
 
 \section*{Performance Results}
 
 \begin{center}
-\includegraphics[width=0.8\textwidth]{chart.png}
+\includegraphics[width=0.85\textwidth]{chart.png}
 \end{center}
+
+\textbf{Figure 1:} Throughput comparison of Producer-Consumer and Work-Pool models with error bars representing minimum and maximum values.
 
 \section*{Observations}
 
 The results show that throughput increases with the number of processes for both execution models. However, the work-pool model significantly outperforms the producer-consumer model at all process counts.
+
+For example, at 16 processes, the work-pool model achieves approximately 16 million messages per second, while the producer-consumer model achieves less than 1 million messages per second. This highlights a significant performance gap between the two approaches.
 
 The producer-consumer model suffers from a centralized bottleneck at the broker (rank 0), which limits scalability as the number of processes increases. This leads to reduced throughput and inefficient utilization of resources.
 
