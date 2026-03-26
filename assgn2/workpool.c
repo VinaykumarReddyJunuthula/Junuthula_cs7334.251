@@ -5,7 +5,7 @@
 
 enum {
     TAG_WORK = 1,
-    TAG_ACK = 2
+    TAG_STOP = 2
 };
 
 static void do_fake_compute(int seed_value) {
@@ -15,34 +15,6 @@ static void do_fake_compute(int seed_value) {
         x = x / 1.00000001 + 0.0000001;
     }
     (void)x;
-}
-
-static void drain_incoming(long long *consumed_count) {
-    int flag = 0;
-    MPI_Status status;
-
-    while (1) {
-        MPI_Iprobe(MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &flag, &status);
-        if (!flag) {
-            break;
-        }
-
-        if (status.MPI_TAG == TAG_WORK) {
-            int value = 0;
-            MPI_Recv(&value, 1, MPI_INT, status.MPI_SOURCE, TAG_WORK,
-                     MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-
-            do_fake_compute(value);
-
-            int ack = 1;
-            MPI_Send(&ack, 1, MPI_INT, status.MPI_SOURCE, TAG_ACK, MPI_COMM_WORLD);
-            (*consumed_count)++;
-        } else if (status.MPI_TAG == TAG_ACK) {
-            int ack = 0;
-            MPI_Recv(&ack, 1, MPI_INT, status.MPI_SOURCE, TAG_ACK,
-                     MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-        }
-    }
 }
 
 int main(int argc, char *argv[]) {
@@ -78,19 +50,15 @@ int main(int argc, char *argv[]) {
         int work = rand() % 100000 + 1;
         int dest = rand() % nproc;
 
-        MPI_Request send_req;
-        MPI_Isend(&work, 1, MPI_INT, dest, TAG_WORK, MPI_COMM_WORLD, &send_req);
+        MPI_Send(&work, 1, MPI_INT, dest, TAG_WORK, MPI_COMM_WORLD);
 
-        int ack_received = 0;
+        int flag = 0;
+        MPI_Status status;
 
-        while (!ack_received) {
-            int flag = 0;
-            MPI_Status status;
+        while (1) {
             MPI_Iprobe(MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &flag, &status);
-
             if (!flag) {
-                do_fake_compute(work);
-                continue;
+                break;
             }
 
             if (status.MPI_TAG == TAG_WORK) {
@@ -99,24 +67,30 @@ int main(int argc, char *argv[]) {
                          MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
                 do_fake_compute(incoming);
-
-                int ack = 1;
-                MPI_Send(&ack, 1, MPI_INT, status.MPI_SOURCE, TAG_ACK, MPI_COMM_WORLD);
                 consumed_count++;
-            } else if (status.MPI_TAG == TAG_ACK) {
-                int ack = 0;
-                MPI_Recv(&ack, 1, MPI_INT, status.MPI_SOURCE, TAG_ACK,
-                         MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-                ack_received = 1;
             }
         }
 
-        MPI_Wait(&send_req, MPI_STATUS_IGNORE);
+        do_fake_compute(work);
     }
 
-    for (int round = 0; round < 3; round++) {
-        drain_incoming(&consumed_count);
-        MPI_Barrier(MPI_COMM_WORLD);
+    MPI_Barrier(MPI_COMM_WORLD);
+
+    int draining = 1;
+    while (draining) {
+        int flag = 0;
+        MPI_Status status;
+        MPI_Iprobe(MPI_ANY_SOURCE, TAG_WORK, MPI_COMM_WORLD, &flag, &status);
+
+        if (flag) {
+            int incoming = 0;
+            MPI_Recv(&incoming, 1, MPI_INT, status.MPI_SOURCE, TAG_WORK,
+                     MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            do_fake_compute(incoming);
+            consumed_count++;
+        } else {
+            draining = 0;
+        }
     }
 
     long long total_consumed = 0;

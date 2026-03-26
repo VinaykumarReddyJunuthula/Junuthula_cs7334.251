@@ -1,75 +1,171 @@
 Producer-Consumer
 4 processes:
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 44798061
+Total number of messages consumed: 45361032
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 49598053
+Total number of messages consumed: 45260314
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 45227637
+Total number of messages consumed: 47260257
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 44958131
+Total number of messages consumed: 45166890
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 45278996
+Total number of messages consumed: 49104537
 TACC:  Shutdown complete. Exiting. 
 8 processes:
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 75446734
+Total number of messages consumed: 64472107
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 75063974
+Total number of messages consumed: 75597521
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 64142214
+Total number of messages consumed: 64367514
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 64433893
+Total number of messages consumed: 75281488
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 64799351
+Total number of messages consumed: 63878891
 TACC:  Shutdown complete. Exiting. 
 12 processes:
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 76893012
+Total number of messages consumed: 82849393
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 76103400
+Total number of messages consumed: 84296579
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 77151816
+Total number of messages consumed: 81175521
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 76403196
+Total number of messages consumed: 81695238
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 75777319
+Total number of messages consumed: 82663307
 TACC:  Shutdown complete. Exiting. 
 16 processes:
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 99976939
+Total number of messages consumed: 103828823
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
-Total number of messages consumed: 100139632
+Total number of messages consumed: 104568937
 TACC:  Shutdown complete. Exiting. 
-TACC:  Starting up job 3036017 
+TACC:  Starting up job 3036312 
 TACC:  Starting parallel tasks... 
+Total number of messages consumed: 104170683
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 104081159
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 103833028
+TACC:  Shutdown complete. Exiting. 
+
+Work-Pool
+4 processes:
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 426455160
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 428334813
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 424533256
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 429085051
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 430928815
+TACC:  Shutdown complete. Exiting. 
+8 processes:
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 793891826
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 792873868
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 792274315
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 792512425
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 795878720
+TACC:  Shutdown complete. Exiting. 
+12 processes:
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 1432165961
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 1414381782
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 1431029220
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 1469403277
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 1442434593
+TACC:  Shutdown complete. Exiting. 
+16 processes:
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 1947733234
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 1975415813
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 1964359181
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 1987417465
+TACC:  Shutdown complete. Exiting. 
+TACC:  Starting up job 3036312 
+TACC:  Starting parallel tasks... 
+Total number of messages consumed: 1956022692
+TACC:  Shutdown complete. Exiting. 
